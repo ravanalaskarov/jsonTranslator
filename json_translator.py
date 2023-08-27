@@ -42,7 +42,6 @@ for index, key in enumerate(json_source_object):
     translated_json_data[key] = translated_string
     print(f'{index + 1}/{jsonLen}', end='\r')
 
-print(translated_json_data)
 file_name = str(f"{to_language}.json")
 
 with open(file_name, "w", encoding='utf-8') as outfile:
